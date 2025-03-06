@@ -1,4 +1,4 @@
-const config = {
+var config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
@@ -9,16 +9,16 @@ const config = {
     }
 };
 
-const game = new Phaser.Game(config);
+var game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('background', 'assets/background.png'); // 背景圖
+    this.load.image('coffeeCup', 'assets/coffee-cup.png');  // 確保路徑正確
 }
 
 function create() {
-    this.add.image(400, 300, 'background');
-    this.add.text(250, 50, '歡迎來到玫瑰咖啡館', { fontSize: '32px', fill: '#ffffff' });
+    this.add.image(400, 300, 'coffeeCup');
 }
 
 function update() {
+    // 遊戲邏輯
 }
