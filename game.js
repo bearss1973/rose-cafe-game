@@ -12,7 +12,7 @@ const config = {
 const game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('background', 'background.png'); // 背景圖
+    this.load.image('background', 'assets/background.png'); // 背景圖
 }
 
 function create() {
